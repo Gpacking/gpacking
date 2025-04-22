@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지패킹</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+    .hero {
+      background: #eee url('https://source.unsplash.com/featured/?label') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .features div {
+      font-size: 16px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: contain;
+    }
+    footer {
+      background: #f9f9f9;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      .hero {
+        font-size: 22px;
+        padding: 80px 10px;
+      }
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>지패킹</h1>
+    <nav>
+      <a href="#about">회사소개</a>
+      <a href="#products">제품소개</a>
+      <a href="#contact">문의하기</a>
+    </nav>
+  </header>
+  <div class="hero">
+    정확하고 빠른<br>라벨 파트너, 지패킹
+  </div>
+  <section id="about">
+    <h2>회사 소개</h2>
+    <p style="margin-top: 20px;">지패킹은 다양한 산업에 최적화된 라벨을 제공하는 신뢰의 파트너입니다.<br>
+      품질과 납기를 철저히 지키며 고객과의 약속을 우선합니다.</p>
+    <div class="features">
+      <div>🤝<br>신뢰</div>
+      <div>✅<br>품질</div>
+      <div>🚚<br>납기</div>
+    </div>
+  </section>
+  <section id="products">
+    <h2>제품 소개</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?label-printer" alt="벤치형 리벨러">
+        <p>벤치형 리벨러</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?label-roll" alt="레이블 롤">
+        <p>레이블 롤</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?label-dispenser" alt="디스펜서">
+        <p>라벨 디스펜서</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>문의하기</h2>
+    <p style="margin-top: 20px;">전화: 042-125-4387<br>
+    이메일: sales@gppacking.co.kr<br>
+    <button style="margin-top:10px;padding:10px 20px;font-weight:bold;">카카오톡 문의</button></p>
+  </section>
+  <footer>
+    © 2025 지패킹 | 사업자정보 | 주소 | 이메일 등
+  </footer>
+</body>
+</html>
