@@ -1,149 +1,282 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>지패킹</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <title>지패킹 | 스티커라벨 · 포장부자재 전문</title>
+  <meta name="description" content="지패킹은 유포지, 아트지, 감열지, 유포감열지, 무지라벨, 슬리브 등 식품·육가공·물류·유통 분야의 스티커라벨 및 포장부자재를 공급합니다.">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans KR', sans-serif;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: #fff;
+      font-family: 'Noto Sans KR', Arial, sans-serif;
       color: #111;
+      background: #fff;
       line-height: 1.6;
     }
+    a { text-decoration: none; color: inherit; }
     header {
-      background: #fff;
-      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .nav {
+      max-width: 1180px;
+      margin: auto;
+      padding: 18px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #ccc;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
-    header h1 {
-      font-size: 24px;
-      font-weight: 700;
+    .logo {
+      font-size: 28px;
+      font-weight: 900;
+      color: #062b63;
+      letter-spacing: -1px;
     }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
+    .logo span { color: #f28c00; }
+    .menu a {
+      margin-left: 24px;
+      font-weight: 600;
+      color: #333;
     }
     .hero {
-      background: #333 url('https://images.unsplash.com/photo-1608139740485-0c6735e7c768?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
+      background: linear-gradient(90deg, #f7f9fc 0%, #ffffff 45%, #eaf1fb 100%);
+      padding: 70px 20px;
+    }
+    .hero-wrap {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.25;
+      color: #062b63;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-weight: 800;
+      display: inline-block;
+    }
+    .btn.primary {
+      background: #062b63;
+      color: #fff;
+    }
+    .btn.outline {
+      border: 2px solid #062b63;
+      color: #062b63;
+    }
+    .hero-card {
+      background: #062b63;
+      color: #fff;
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.16);
+    }
+    .hero-card h2 {
       font-size: 28px;
-      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero-card li {
+      list-style: none;
+      margin: 12px 0;
+      font-size: 17px;
     }
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
+      padding: 70px 20px;
+    }
+    .container {
+      max-width: 1180px;
       margin: auto;
     }
-    .features {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 30px;
-      text-align: center;
+    .section-title {
+      font-size: 34px;
+      color: #062b63;
+      margin-bottom: 12px;
+      font-weight: 900;
     }
-    .features div {
-      font-size: 16px;
+    .section-desc {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 34px;
     }
-    .products {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
-    .product {
-      border: 1px solid #ddd;
-      padding: 20px;
+    .card {
+      border: 1px solid #e5e8ef;
+      border-radius: 16px;
+      padding: 26px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .card h3 {
+      color: #062b63;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .blue {
+      background: #f4f8ff;
+    }
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .step {
+      background: #fff;
+      border-left: 5px solid #062b63;
+      padding: 22px;
+      border-radius: 12px;
+    }
+    .contact {
+      background: #062b63;
+      color: #fff;
       text-align: center;
     }
-    .product img {
-      max-width: 100%;
-      height: 120px;
-      object-fit: cover;
+    .contact h2 {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    .contact p {
+      font-size: 20px;
+      margin-bottom: 8px;
     }
     footer {
-      background: #f9f9f9;
-      padding: 30px 20px;
-      text-align: center;
+      background: #111;
+      color: #ccc;
+      padding: 34px 20px;
       font-size: 14px;
-      color: #555;
-      margin-top: 60px;
     }
-    @media (max-width: 600px) {
-      .hero {
-        font-size: 22px;
-        padding: 80px 10px;
-      }
-      nav a {
-        margin-left: 10px;
-        font-size: 14px;
-      }
+    footer .container div {
+      margin-bottom: 6px;
+    }
+    @media (max-width: 800px) {
+      .menu { display: none; }
+      .hero-wrap { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 34px; }
+      .hero p { font-size: 17px; }
+      .grid { grid-template-columns: 1fr; }
+      .process { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>지패킹</h1>
-    <nav>
+
+<header>
+  <div class="nav">
+    <div class="logo">G<span>•</span>PACKING 지패킹</div>
+    <nav class="menu">
       <a href="#about">회사소개</a>
       <a href="#products">제품소개</a>
-      <a href="#contact">문의하기</a>
+      <a href="#process">제작문의</a>
+      <a href="#contact">연락처</a>
     </nav>
-  </header>
-  <div class="hero">
-    정확하고 빠른<br>라벨 파트너, 지패킹
   </div>
-  <section id="about">
-    <h2>회사 소개</h2>
-    <p style="margin-top: 20px;">지패킹은 다양한 산업에 최적화된 라벨을 제공하는 신뢰의 파트너입니다.<br>
-      품질과 납기를 철저히 지키며 고객과의 약속을 우선합니다.</p>
-    <div class="features">
-      <div>🤝<br>신뢰</div>
-      <div>✅<br>품질</div>
-      <div>🚚<br>납기</div>
-    </div>
-  </section>
-  <section id="products">
-    <h2>제품 소개</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1581091870627-3c918204d5e5?auto=format&fit=crop&w=400&q=60" alt="벤치형 리벨러">
-        <p>벤치형 리벨러</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1614691259233-3dc5dc09f9d9?auto=format&fit=crop&w=400&q=60" alt="레이블 롤">
-        <p>레이블 롤</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1603816249930-66a4919c83cb?auto=format&fit=crop&w=400&q=60" alt="디스펜서">
-        <p>라벨 디스펜서</p>
+</header>
+
+<section class="hero">
+  <div class="hero-wrap">
+    <div>
+      <h1>보이는 라벨 하나가<br>제품의 신뢰를 만듭니다.</h1>
+      <p>
+        지패킹은 식품·육가공·건강기능식품·물류·유통 분야에 사용되는
+        스티커라벨 및 포장부자재를 전문적으로 공급합니다.
+      </p>
+      <div class="btns">
+        <a class="btn primary" href="tel:050713559889">전화 문의</a>
+        <a class="btn outline" href="mailto:g.corp.film@gmail.com">이메일 문의</a>
       </div>
     </div>
-  </section>
-  <section id="contact">
+    <div class="hero-card">
+      <h2>LABEL & PACKAGING</h2>
+      <ul>
+        <li>✓ 유포지 · 아트지 · 감열지 · 유포감열지</li>
+        <li>✓ 무지라벨 · 바코드라벨 · 식품라벨</li>
+        <li>✓ 종이 슬리브 · 포장부자재 공급</li>
+        <li>✓ 재질 제안부터 납기까지 실무 중심 대응</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">지패킹 소개</h2>
+    <p class="section-desc">
+      지패킹은 단순 라벨 공급이 아닌, 브랜드와 제품의 완성도를 높이는 패키징 파트너를 지향합니다.
+      제품 환경과 사용 목적에 맞는 재질 제안부터 인쇄 품질, 접착력, 작업성, 납기까지 실무 중심으로 상담해드립니다.
+    </p>
+  </div>
+</section>
+
+<section id="products" class="blue">
+  <div class="container">
+    <h2 class="section-title">주요 제품</h2>
+    <p class="section-desc">다양한 사용 환경에 맞는 라벨 및 포장부자재를 공급합니다.</p>
+    <div class="grid">
+      <div class="card"><h3>유포지 라벨</h3><p>내수성, 내구성이 필요한 식품·냉장·냉동 제품에 적합합니다.</p></div>
+      <div class="card"><h3>아트지 라벨</h3><p>선명한 인쇄 표현과 경제성이 필요한 일반 제품 라벨에 적합합니다.</p></div>
+      <div class="card"><h3>감열지 라벨</h3><p>바코드, 가격표, 물류, 유통 라벨 등에 사용됩니다.</p></div>
+      <div class="card"><h3>유포감열지 라벨</h3><p>내수성과 감열 인쇄 기능이 필요한 제품에 적합합니다.</p></div>
+      <div class="card"><h3>무지라벨</h3><p>현장 출력용, 바코드 출력용, 저울 라벨 등 다양한 규격 대응이 가능합니다.</p></div>
+      <div class="card"><h3>종이 슬리브</h3><p>용기에 끼워 사용하는 종이 슬리브로 제품 보호와 브랜드 표현에 활용됩니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <h2 class="section-title">상담 및 제작 진행</h2>
+    <p class="section-desc">용도와 환경에 맞는 사양을 확인한 뒤 적합한 라벨을 제안드립니다.</p>
+    <div class="process">
+      <div class="step"><strong>01</strong><br>제품 용도 확인</div>
+      <div class="step"><strong>02</strong><br>재질 및 규격 상담</div>
+      <div class="step"><strong>03</strong><br>견적 및 납기 협의</div>
+      <div class="step"><strong>04</strong><br>제작 및 납품</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
     <h2>문의하기</h2>
-    <p style="margin-top: 20px;">전화: 010-5695-8276<br>
-    이메일: g.corp.film@gmail.com<br>
-    <button style="margin-top:10px;padding:10px 20px;font-weight:bold;">카카오톡 문의</button></p>
-  </section>
-  <footer>
-    © 지패킹 | 657-43-01011 | 010-5695-8276 | g.corp.film@gmail.com
-  </footer>
+    <p>대표전화: 0507-1355-9889</p>
+    <p>휴대전화: 010-5934-9889</p>
+    <p>이메일: g.corp.film@gmail.com</p>
+    <p>주소: 경기 남양주시 오남읍 양지로대대울2길 34</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div><strong>지패킹</strong></div>
+    <div>대표자: 김봉숙 | 사업자등록번호: 264-64-00703</div>
+    <div>사업장 소재지: 경기도 성남시 분당구 돌마로486번길 40, 4층 38호</div>
+    <div>업태: 제조업, 도매 및 소매업 | 종목: 기타 인쇄업, 생활용 포장 및 위생용품 등</div>
+    <div>Fax: 0504-343-4964 | Email: g.corp.film@gmail.com</div>
+    <div>© G-PACKING. All Rights Reserved.</div>
+  </div>
+</footer>
+
 </body>
 </html>
