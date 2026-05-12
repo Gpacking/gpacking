@@ -52,16 +52,46 @@ header{height:62px;background:#fff;border-bottom:1px solid #d9dee7;position:stic
 .process{background:#fff;padding:12px 36px 13px}
 .process .section-title{font-size:24px}
 .process .section-desc{margin-bottom:12px}
-.steps{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr 30px 1fr;align-items:center}
-.step{height:66px;border:1px solid #d8dee8;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;gap:13px;font-weight:900;box-shadow:0 2px 7px rgba(0,0,0,.05);font-size:13px}
-.num{font-size:20px;color:#061a38}
-.ico{font-size:23px;color:#062b63}
-.arrow{text-align:center;color:#a3adba;font-size:28px}
+.steps{
+max-width:860px;
+margin:0 auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
+}
+
+.step{
+height:66px;
+border:1px solid #d8dee8;
+border-radius:6px;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:13px;
+font-weight:900;
+box-shadow:0 2px 7px rgba(0,0,0,.05);
+font-size:13px;
+}
+
+.step b{
+font-size:20px;
+color:#061a38;
+}
+
 .contact{height:150px;background:#062b63;position:relative;color:#fff;overflow:hidden}
 .contact:before{content:"";position:absolute;inset:0;background:url('gp-footer-bg.jpg') right center/contain no-repeat;opacity:.70}
 .contact-inner{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:16px 36px}
 .contact h2{text-align:center;font-size:25px;font-weight:900;margin-bottom:15px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px 44px;max-width:620px;font-size:13px;font-weight:700}
+.contact-list{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:9px 44px;
+max-width:620px;
+font-size:13px;
+font-weight:700;
+}
+
 footer{background:#07111f;color:#fff;padding:18px 36px 22px}
 .footer-inner{max-width:860px;margin:0 auto;font-size:12px;line-height:1.65}
 .footer-logo{font-size:22px;font-weight:900;margin-bottom:4px}
@@ -72,7 +102,7 @@ header{height:auto}.nav{height:auto;padding:18px 22px}.menu{display:none}.logo{f
 .hero-inner{grid-template-columns:1fr;padding:30px 22px;gap:20px}.hero h1{font-size:34px}.hero-img img{max-width:520px;margin:0 auto}.hero-card{min-height:auto}
 .about{height:auto}.about-inner{grid-template-columns:1fr;height:auto}.about-img{height:160px}
 .product-grid{grid-template-columns:1fr 1fr}.product-card img{height:130px}
-.steps{grid-template-columns:1fr;gap:10px}.arrow{display:none}.contact{height:auto}.contact-grid{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr;gap:10px}.arrow{display:none}.contact{height:auto}.contact-list{grid-template-columns:1fr}
 .kakao-btn{right:16px;bottom:18px;padding:12px 18px;font-size:15px}
 }
 @media(max-width:520px){.product-grid{grid-template-columns:1fr}.btn{min-width:118px}.btns{flex-wrap:wrap}.products{padding-left:20px;padding-right:20px}}
