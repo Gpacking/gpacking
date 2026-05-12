@@ -92,7 +92,7 @@ color:#061a38;
 }
 
 .contact{
-  background:linear-gradient(90deg,#062b63 0%,#0a3475 60%,#11408c 100%);
+  background:#062b63;
   color:#fff;
   overflow:hidden;
 }
@@ -103,40 +103,32 @@ color:#061a38;
   display:grid;
   grid-template-columns:1fr 320px;
   align-items:center;
+  min-height:210px;
 }
 
 .contact-text{
-  padding:38px 40px;
+  padding:34px 36px;
 }
 
 .contact h2{
-  font-size:42px;
+  text-align:left;
+  font-size:34px;
   font-weight:900;
-  margin-bottom:26px;
-  letter-spacing:-1px;
+  margin-bottom:22px;
 }
 
 .contact-list{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px 40px;
-  font-size:17px;
-  line-height:1.8;
+  gap:10px 36px;
+  font-size:15px;
+  line-height:1.7;
   font-weight:700;
 }
 
 .contact-image{
-  height:100%;
-  min-height:240px;
+  height:210px;
   background:url('gp-footer-bg.jpg') center center/cover no-repeat;
-}
-.contact-list{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:9px 44px;
-max-width:620px;
-font-size:13px;
-font-weight:700;
 }
 
 footer{background:#07111f;color:#fff;padding:18px 36px 22px}
@@ -145,11 +137,32 @@ footer{background:#07111f;color:#fff;padding:18px 36px 22px}
 .kakao-btn{position:fixed;right:42px;bottom:32px;background:#FEE500;color:#000;border-radius:999px;padding:14px 30px;display:flex;align-items:center;gap:10px;font-size:18px;font-weight:900;box-shadow:0 9px 24px rgba(0,0,0,.23);z-index:9999}
 .kakao-circle{width:32px;height:32px;border-radius:50%;background:#111;color:#FEE500;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}
 @media(max-width:900px){
+  .contact-inner{
+  grid-template-columns:1fr;
+}
+
+.contact-text{
+  padding:30px 24px;
+}
+
+.contact h2{
+  text-align:center;
+  font-size:30px;
+}
+
+.contact-list{
+  grid-template-columns:1fr;
+  font-size:14px;
+}
+
+.contact-image{
+  height:160px;
+}
 header{height:auto}.nav{height:auto;padding:18px 22px}.menu{display:none}.logo{font-size:25px}
 .hero-inner{grid-template-columns:1fr;padding:30px 22px;gap:20px}.hero h1{font-size:34px}.hero-img img{max-width:520px;margin:0 auto}.hero-card{min-height:auto}
 .about{height:auto}.about-inner{grid-template-columns:1fr;height:auto}.about-img{height:160px}
 .product-grid{grid-template-columns:1fr 1fr}.product-card img{height:130px}
-.steps{grid-template-columns:1fr;gap:10px}.arrow{display:none}.contact{height:auto}.contact-list{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr;gap:10px}.arrow{display:none}
 .kakao-btn{right:16px;bottom:18px;padding:12px 18px;font-size:15px}
 }
 @media(max-width:520px){.product-grid{grid-template-columns:1fr}.btn{min-width:118px}.btns{flex-wrap:wrap}.products{padding-left:20px;padding-right:20px}}
@@ -236,20 +249,18 @@ header{height:auto}.nav{height:auto;padding:18px 22px}.menu{display:none}.logo{f
       <h2>문의하기</h2>
 
       <div class="contact-list">
-              </div>
+        <p>대표전화: 0507-1355-9889</p>
+        <p>휴대전화: 010-5934-9889</p>
+        <p>이메일: g.corp.film@gmail.com</p>
+        <p>주소: 경기 남양주시 오남읍 양지로대대울2길 34</p>
+      </div>
     </div>
 
     <div class="contact-image"></div>
 
   </div>
 </section>
-  <p>대표전화: 0507-1355-9889</p>
-  <p>휴대전화: 010-5934-9889</p>
-  <p>이메일: g.corp.film@gmail.com</p>
-  <p>주소: 경기 남양주시 오남읍 양지로대대울2길 34</p>
-</div>
-  </div>
-</section>
+ 
 
 <footer>
   <div class="footer-inner">
