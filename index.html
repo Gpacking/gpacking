@@ -79,10 +79,45 @@ font-size:20px;
 color:#061a38;
 }
 
-.contact{height:150px;background:#062b63;position:relative;color:#fff;overflow:hidden}
-.contact:before{content:"";position:absolute;inset:0;background:url('gp-footer-bg.jpg') right center/contain no-repeat;opacity:.70}
-.contact-inner{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:16px 36px}
-.contact h2{text-align:center;font-size:25px;font-weight:900;margin-bottom:15px}
+.contact{
+  background:linear-gradient(90deg,#062b63 0%,#0a3475 60%,#11408c 100%);
+  color:#fff;
+  overflow:hidden;
+}
+
+.contact-inner{
+  max-width:980px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 320px;
+  align-items:center;
+}
+
+.contact-text{
+  padding:38px 40px;
+}
+
+.contact h2{
+  font-size:42px;
+  font-weight:900;
+  margin-bottom:26px;
+  letter-spacing:-1px;
+}
+
+.contact-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px 40px;
+  font-size:17px;
+  line-height:1.8;
+  font-weight:700;
+}
+
+.contact-image{
+  height:100%;
+  min-height:240px;
+  background:url('gp-footer-bg.jpg') center center/cover no-repeat;
+}
 .contact-list{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -184,8 +219,18 @@ header{height:auto}.nav{height:auto;padding:18px 22px}.menu{display:none}.logo{f
 
 <section id="contact" class="contact">
   <div class="contact-inner">
-    <h2>문의하기</h2>
-    <div class="contact-list">
+
+    <div class="contact-text">
+      <h2>문의하기</h2>
+
+      <div class="contact-list">
+              </div>
+    </div>
+
+    <div class="contact-image"></div>
+
+  </div>
+</section>
   <p>대표전화: 0507-1355-9889</p>
   <p>휴대전화: 010-5934-9889</p>
   <p>이메일: g.corp.film@gmail.com</p>
