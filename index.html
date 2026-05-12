@@ -5,214 +5,646 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>지패킹 | 라벨 · 스티커라벨 · 식품라벨 제작 전문</title>
-<meta name="description" content="지패킹은 유포지, 아트지, 감열지, 유포감열지, 무지라벨, 바코드라벨, 종이슬리브 등 식품·육가공·물류·유통 라벨을 전문 공급합니다.">
+
+<meta name="description" content="지패킹은 유포지, 아트지, 감열지, 유포감열지, 무지라벨, 바코드라벨, 종이슬리브 등 식품·육가공·물류·유통 분야의 라벨 및 포장부자재를 전문 공급합니다.">
+
 <meta name="keywords" content="라벨, 스티커라벨, 라벨스티커, 식품라벨, 유포지라벨, 아트지라벨, 감열지라벨, 유포감열지, 무지라벨, 바코드라벨, 종이슬리브, 지패킹">
+
 <meta name="naver-site-verification" content="c0ddb88db24720dcd425bc0784cd4f4462a09b41">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Noto Sans KR',Arial,sans-serif;color:#111;background:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-header{background:#fff;border-bottom:1px solid #e5e5e5;position:sticky;top:0;z-index:100}
-.nav{max-width:1180px;margin:auto;padding:20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:30px;font-weight:900;color:#062b63}
-.logo span{color:#f28c00}
-.menu a{margin-left:28px;font-weight:800;color:#111}
 
-.hero{background:linear-gradient(90deg,#f7fbff,#fff);padding:70px 20px}
-.hero-wrap{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.hero h1{font-size:50px;line-height:1.25;color:#062b63;margin-bottom:22px;font-weight:900}
-.hero p{font-size:19px;margin-bottom:28px;color:#333}
-.btns{display:flex;gap:12px}
-.btn{padding:14px 22px;border-radius:8px;font-weight:900}
-.primary{background:#062b63;color:#fff}
-.outline{border:2px solid #062b63;color:#062b63;background:#fff}
-.hero-img{width:100%;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
-
-section{padding:70px 20px}
-.container{max-width:1180px;margin:auto}
-.title{text-align:center;font-size:36px;font-weight:900;color:#062b63;margin-bottom:12px}
-.desc{text-align:center;font-size:18px;color:#555;margin-bottom:35px}
-.about{background:#fff}
-.about-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.about-text h2{font-size:34px;color:#062b63;margin-bottom:16px}
-.about-text p{font-size:18px;color:#333}
-.about-img{height:230px;border-radius:18px;background:linear-gradient(135deg,#e8f0fb,#ffffff);display:flex;align-items:center;justify-content:center;color:#062b63;font-weight:900;font-size:24px;border:1px solid #e1e7f0}
-
-.products{background:#f4f8ff}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.08);border:1px solid #e3e8ef}
-.card-img{height:155px;background:linear-gradient(135deg,#eef4ff,#fff);display:flex;align-items:center;justify-content:center}
-.rolls{display:flex;gap:8px;align-items:end}
-.roll{width:46px;height:72px;border-radius:22px 22px 8px 8px;background:linear-gradient(#fff,#dce6f0);border:1px solid #cfd8e3;position:relative}
-.roll:before{content:"";position:absolute;top:7px;left:8px;width:28px;height:12px;border-radius:50%;background:#caa56a;border:5px solid #fff}
-.roll.small{height:52px}
-.roll.blue{background:linear-gradient(#e7f3ff,#b8d8f5)}
-.roll.yellow{background:linear-gradient(#fff4c8,#f0cf5b)}
-.card-body{padding:20px;text-align:center}
-.card-body h3{font-size:21px;color:#062b63;margin-bottom:8px;font-weight:900}
-.card-body p{font-size:15px;color:#555}
-
-.process{background:#fff}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.step{background:#fff;border:1px solid #dfe7f1;border-radius:14px;padding:24px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.05)}
-.step strong{font-size:28px;color:#062b63;display:block;margin-bottom:8px}
-
-.contact{background:linear-gradient(135deg,#062b63,#0b3d85);color:#fff;text-align:center}
-.contact h2{font-size:38px;margin-bottom:20px}
-.contact p{font-size:20px;margin-bottom:8px}
-
-footer{background:#111;color:#ccc;padding:35px 20px;font-size:14px}
-footer .container div{margin-bottom:6px}
-
-.kakao-btn{position:fixed;right:20px;bottom:20px;background:#FEE500;color:#000;padding:14px 20px;border-radius:50px;display:flex;align-items:center;gap:8px;font-weight:900;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:9999}
-.kakao-icon{background:#000;color:#FEE500;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900}
-
-@media(max-width:800px){
-.menu{display:none}
-.hero-wrap,.about-box{grid-template-columns:1fr}
-.hero h1{font-size:36px}
-.grid{grid-template-columns:1fr}
-.steps{grid-template-columns:1fr}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+font-family:'Noto Sans KR',sans-serif;
+background:#f5f6f8;
+color:#111;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+background:#fff;
+border-bottom:1px solid #ddd;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.nav{
+max-width:1280px;
+margin:auto;
+padding:18px 24px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:34px;
+font-weight:900;
+color:#062b63;
+}
+
+.logo span{
+color:#f5a300;
+}
+
+.menu a{
+margin-left:38px;
+font-size:18px;
+font-weight:800;
+}
+
+.hero{
+background:#eef2f7;
+padding:50px 20px;
+}
+
+.hero-wrap{
+max-width:1280px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1.1fr 0.8fr;
+gap:26px;
+align-items:center;
+}
+
+.hero-left h1{
+font-size:66px;
+line-height:1.18;
+font-weight:900;
+color:#062b63;
+margin-bottom:22px;
+}
+
+.hero-left p{
+font-size:23px;
+color:#333;
+margin-bottom:28px;
+}
+
+.btns{
+display:flex;
+gap:14px;
+}
+
+.btn{
+padding:16px 28px;
+border-radius:10px;
+font-size:18px;
+font-weight:900;
+display:inline-block;
+}
+
+.primary{
+background:#062b63;
+color:#fff;
+}
+
+.outline{
+border:2px solid #062b63;
+color:#062b63;
+background:#fff;
+}
+
+.hero-center img{
+width:100%;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.hero-right{
+background:#062b63;
+color:#fff;
+padding:38px;
+border-radius:22px;
+}
+
+.hero-right h2{
+font-size:40px;
+margin-bottom:24px;
+font-weight:900;
+}
+
+.hero-right li{
+list-style:none;
+margin-bottom:18px;
+font-size:22px;
+font-weight:600;
+}
+
+.about{
+background:#fff;
+padding:50px 20px;
+}
+
+.about-wrap{
+max-width:1280px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.about-text h2{
+font-size:48px;
+margin-bottom:20px;
+color:#062b63;
+font-weight:900;
+}
+
+.about-text p{
+font-size:22px;
+color:#333;
+}
+
+.about-img{
+height:280px;
+background:url('[gpk]main-banner.png') center/cover no-repeat;
+border-radius:18px;
+}
+
+.products{
+padding:70px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:52px;
+font-weight:900;
+color:#062b63;
+margin-bottom:12px;
+}
+
+.section-desc{
+text-align:center;
+font-size:22px;
+margin-bottom:45px;
+color:#555;
+}
+
+.grid{
+max-width:1280px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:22px;
+}
+
+.card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+border:1px solid #e3e3e3;
+}
+
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-body{
+padding:24px;
+text-align:center;
+}
+
+.card-body h3{
+font-size:32px;
+color:#062b63;
+margin-bottom:12px;
+font-weight:900;
+}
+
+.card-body p{
+font-size:20px;
+color:#444;
+}
+
+.process{
+background:#fff;
+padding:70px 20px;
+}
+
+.steps{
+max-width:1280px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.step{
+background:#fff;
+border-radius:18px;
+padding:34px;
+text-align:center;
+border:1px solid #ddd;
+box-shadow:0 8px 18px rgba(0,0,0,.05);
+}
+
+.step strong{
+font-size:44px;
+display:block;
+color:#062b63;
+margin-bottom:14px;
+}
+
+.step span{
+font-size:24px;
+font-weight:700;
+}
+
+.contact{
+background:linear-gradient(135deg,#062b63,#0c3d82);
+padding:70px 20px;
+color:#fff;
+text-align:center;
+}
+
+.contact h2{
+font-size:52px;
+margin-bottom:26px;
+font-weight:900;
+}
+
+.contact p{
+font-size:26px;
+margin-bottom:12px;
+}
+
+footer{
+background:#111;
+color:#ddd;
+padding:45px 20px;
+font-size:18px;
+}
+
+footer .container{
+max-width:1280px;
+margin:auto;
+}
+
+footer div{
+margin-bottom:8px;
+}
+
+.kakao-btn{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#FEE500;
+color:#000;
+padding:16px 24px;
+border-radius:60px;
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:900;
+font-size:20px;
+z-index:9999;
+box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
+
+.kakao-circle{
+width:34px;
+height:34px;
+border-radius:50%;
+background:#000;
+color:#FEE500;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:12px;
+font-weight:900;
+}
+
+@media(max-width:900px){
+
+.hero-wrap{
+grid-template-columns:1fr;
+}
+
+.about-wrap{
+grid-template-columns:1fr;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.steps{
+grid-template-columns:1fr;
+}
+
+.hero-left h1{
+font-size:42px;
+}
+
+.hero-left p{
+font-size:18px;
+}
+
+.hero-right h2{
+font-size:28px;
+}
+
+.hero-right li{
+font-size:18px;
+}
+
+.card-body h3{
+font-size:24px;
+}
+
+.card-body p{
+font-size:16px;
+}
+
+.section-title{
+font-size:36px;
+}
+
+.contact h2{
+font-size:38px;
+}
+
+.contact p{
+font-size:20px;
+}
+
+.menu{
+display:none;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <div class="nav">
-<div class="logo">G<span>•</span>PACKING 지패킹</div>
+
+<div class="logo">
+G<span>•</span>PACKING 지패킹
+</div>
+
 <nav class="menu">
 <a href="#about">회사소개</a>
 <a href="#products">제품소개</a>
 <a href="#process">제작문의</a>
 <a href="#contact">연락처</a>
 </nav>
+
 </div>
+
 </header>
 
 <section class="hero">
+
 <div class="hero-wrap">
-<div>
-<h1>보이는 라벨 하나가<br>제품의 신뢰를<br>만듭니다.</h1>
-<p>지패킹은 식품·육가공·건강기능식품·물류·유통 분야에 사용되는<br>스티커라벨 및 포장부자재를 전문적으로 공급합니다.</p>
+
+<div class="hero-left">
+
+<h1>
+보이는 라벨 하나가<br>
+제품의 신뢰를<br>
+만듭니다.
+</h1>
+
+<p>
+지패킹은 식품·육가공·건강기능식품·물류·유통 분야에 사용되는<br>
+스티커라벨 및 포장부자재를 전문적으로 공급합니다.
+</p>
+
 <div class="btns">
-<a class="btn primary" href="tel:050713559889">전화 문의</a>
-<a class="btn outline" href="mailto:g.corp.film@gmail.com">이메일 문의</a>
+
+<a class="btn primary" href="tel:050713559889">
+전화 문의
+</a>
+
+<a class="btn outline" href="mailto:g.corp.film@gmail.com">
+이메일 문의
+</a>
+
 </div>
+
 </div>
-<div>
-<img class="hero-img" src="[gpk]main-banner.png" alt="지패킹 라벨 설비 및 제품 소개">
+
+<div class="hero-center">
+
+<img src="[gpk]main-banner.png">
+
 </div>
+
+<div class="hero-right">
+
+<h2>LABEL & PACKAGING</h2>
+
+<ul>
+<li>✓ 유포지 · 아트지 · 감열지 · 유포감열지</li>
+<li>✓ 무지라벨 · 바코드라벨 · 식품라벨</li>
+<li>✓ 종이 슬리브 · 포장부자재 공급</li>
+<li>✓ 재질 제안부터 납기까지 실무 중심 대응</li>
+</ul>
+
 </div>
+
+</div>
+
 </section>
 
 <section id="about" class="about">
-<div class="container">
-<div class="about-box">
+
+<div class="about-wrap">
+
 <div class="about-text">
+
 <h2>지패킹 소개</h2>
+
 <p>
 지패킹은 단순 라벨 공급이 아닌,<br>
 브랜드와 제품의 완성도를 높이는 패키징 파트너를 지향합니다.<br><br>
-제품 환경과 사용 목적에 맞는 재질 제안부터 인쇄 품질, 접착력, 작업성, 납기까지 실무 중심으로 상담해드립니다.
+제품 환경과 사용 목적에 맞는 재질 제안부터 인쇄 품질,
+접착력, 작업성, 납기까지 실무 중심으로 상담해드립니다.
 </p>
+
 </div>
-<div class="about-img">LABEL · STICKER · PACKAGING</div>
+
+<div class="about-img"></div>
+
 </div>
-</div>
+
 </section>
 
 <section id="products" class="products">
-<div class="container">
-<h2 class="title">주요 제품</h2>
-<p class="desc">다양한 사용 환경에 맞는 라벨 및 포장부자재를 공급합니다.</p>
+
+<h2 class="section-title">주요 제품</h2>
+
+<p class="section-desc">
+다양한 사용 환경에 맞는 라벨 및 포장부자재를 공급합니다.
+</p>
 
 <div class="grid">
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll"></div><div class="roll small"></div><div class="roll blue"></div></div></div>
-<div class="card-body"><h3>유포지 라벨</h3><p>내수성, 내구성이 필요한 식품·냉장·냉동 제품에 적합합니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>유포지 라벨</h3>
+<p>내수성, 내구성이 필요한 식품·냉장·냉동 제품에 적합합니다.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll yellow"></div><div class="roll"></div><div class="roll small"></div></div></div>
-<div class="card-body"><h3>아트지 라벨</h3><p>선명한 인쇄 표현과 경제성이 필요한 일반 제품 라벨입니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>아트지 라벨</h3>
+<p>선명한 인쇄 표현과 경제성이 필요한 일반 제품 라벨입니다.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll blue"></div><div class="roll"></div><div class="roll yellow small"></div></div></div>
-<div class="card-body"><h3>감열지 라벨</h3><p>바코드, 가격표, 물류, 유통 라벨 등에 사용됩니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>감열지 라벨</h3>
+<p>바코드, 가격표, 물류, 유통 라벨 등에 사용됩니다.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll"></div><div class="roll blue"></div><div class="roll small"></div></div></div>
-<div class="card-body"><h3>유포감열지 라벨</h3><p>내수성과 감열 인쇄 기능이 필요한 제품에 적합합니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>유포감열지 라벨</h3>
+<p>내수성과 감열 인쇄 기능이 필요한 제품에 적합합니다.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll small"></div><div class="roll"></div><div class="roll small"></div></div></div>
-<div class="card-body"><h3>무지라벨</h3><p>현장 출력용, 바코드 출력용, 저울 라벨 등 다양한 규격 대응.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>무지라벨</h3>
+<p>현장 출력용, 바코드 출력용, 저울 라벨 등 다양한 규격 대응.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll yellow"></div><div class="roll blue"></div><div class="roll"></div></div></div>
-<div class="card-body"><h3>종이 슬리브</h3><p>용기에 끼워 사용하는 종이 슬리브로 브랜드 표현에 활용됩니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>종이 슬리브</h3>
+<p>용기에 끼워 사용하는 종이 슬리브로 브랜드 표현에 활용됩니다.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll"></div><div class="roll yellow small"></div><div class="roll blue"></div></div></div>
-<div class="card-body"><h3>바코드 라벨</h3><p>물류, 유통, 재고관리용 바코드 라벨을 공급합니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>바코드 라벨</h3>
+<p>물류, 유통, 재고관리용 바코드 라벨을 공급합니다.</p>
+</div>
 </div>
 
 <div class="card">
-<div class="card-img"><div class="rolls"><div class="roll yellow"></div><div class="roll"></div><div class="roll blue small"></div></div></div>
-<div class="card-body"><h3>포장부자재</h3><p>라벨과 함께 필요한 포장부자재를 상담합니다.</p></div>
+<img src="[gpk]main-banner.png">
+<div class="card-body">
+<h3>포장부자재</h3>
+<p>다양한 포장부자재를 함께 공급하여 효율적인 포장이 가능합니다.</p>
+</div>
 </div>
 
 </div>
-</div>
+
 </section>
 
 <section id="process" class="process">
-<div class="container">
-<h2 class="title">상담 및 제작 진행</h2>
-<p class="desc">용도와 환경에 맞는 사양을 확인한 뒤 적합한 라벨을 제안드립니다.</p>
+
+<h2 class="section-title">상담 및 제작 진행</h2>
+
+<p class="section-desc">
+용도와 환경에 맞는 사양을 확인한 뒤 적합한 라벨을 제안드립니다.
+</p>
 
 <div class="steps">
-<div class="step"><strong>01</strong>제품 용도 확인</div>
-<div class="step"><strong>02</strong>재질 및 규격 상담</div>
-<div class="step"><strong>03</strong>견적 및 납기 협의</div>
-<div class="step"><strong>04</strong>제작 및 납품</div>
+
+<div class="step">
+<strong>01</strong>
+<span>제품 용도 확인</span>
 </div>
+
+<div class="step">
+<strong>02</strong>
+<span>재질 및 규격 상담</span>
 </div>
+
+<div class="step">
+<strong>03</strong>
+<span>견적 및 납기 협의</span>
+</div>
+
+<div class="step">
+<strong>04</strong>
+<span>제작 및 납품</span>
+</div>
+
+</div>
+
 </section>
 
 <section id="contact" class="contact">
-<div class="container">
+
 <h2>문의하기</h2>
-<p>대표전화: 0507-1355-9889</p>
-<p>휴대전화: 010-5934-9889</p>
-<p>이메일: g.corp.film@gmail.com</p>
-<p>주소: 경기 남양주시 오남읍 양지로대대울2길 34</p>
-</div>
+
+<p>대표전화 : 0507-1355-9889</p>
+<p>휴대전화 : 010-5934-9889</p>
+<p>이메일 : g.corp.film@gmail.com</p>
+<p>주소 : 경기 남양주시 오남읍 양지로대대울2길 34</p>
+
 </section>
 
 <footer>
+
 <div class="container">
+
 <div><strong>G·PACKING 지패킹</strong></div>
-<div>대표자: 김봉숙 | 사업자등록번호: 264-64-00703</div>
-<div>사업장 소재지: 경기도 성남시 분당구 돌마로486번길 40, 4층 38호</div>
-<div>업태: 제조업, 도매 및 소매업 | 종목: 기타 인쇄업, 생활용 포장 및 위생용품 등</div>
-<div>Fax: 0504-343-4964 | Email: g.corp.film@gmail.com</div>
+
+<div>대표자 : 김봉숙 | 사업자등록번호 : 264-64-00703</div>
+
+<div>사업장 소재지 : 경기도 성남시 분당구 돌마로486번길 40, 4층 38호</div>
+
+<div>업태 : 제조업, 도매 및 소매업 | 종목 : 기타 인쇄업, 생활용 포장 및 위생용품 등</div>
+
+<div>Fax : 0504-343-4964 | Email : g.corp.film@gmail.com</div>
+
 <div>© G-PACKING. All Rights Reserved.</div>
+
 </div>
+
 </footer>
 
-<a class="kakao-btn" href="http://pf.kakao.com/_TLxiKX" target="_blank">
-<span class="kakao-icon">TALK</span>
+<a class="kakao-btn"
+href="http://pf.kakao.com/_TLxiKX"
+target="_blank">
+
+<div class="kakao-circle">
+TALK
+</div>
+
 <span>카카오톡 문의</span>
+
 </a>
 
 </body>
