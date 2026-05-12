@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300">
+<defs><linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#f8f9fb"/><stop offset="1" stop-color="#e9eef5"/></linearGradient>
+<filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-opacity=".14"/></filter></defs>
+<rect width="520" height="300" fill="url(#b)"/>
+<g filter="url(#s)"><rect x="140" y="65" width="260" height="150" rx="12" fill="#fff" stroke="#ddd"/>
+        <g fill="#111"><rect x="170" y="95" width="5" height="62"/><rect x="180" y="95" width="2" height="62"/><rect x="188" y="95" width="8" height="62"/><rect x="204" y="95" width="3" height="62"/><rect x="215" y="95" width="10" height="62"/><rect x="235" y="95" width="4" height="62"/><rect x="245" y="95" width="8" height="62"/><rect x="262" y="95" width="3" height="62"/><rect x="273" y="95" width="12" height="62"/><rect x="295" y="95" width="3" height="62"/><rect x="306" y="95" width="9" height="62"/><rect x="325" y="95" width="5" height="62"/></g>
+        <rect x="170" y="172" width="130" height="8" fill="#999"/><rect x="170" y="188" width="180" height="7" fill="#ccc"/></g>
+</svg>
